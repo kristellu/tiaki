@@ -17,7 +17,7 @@ export default class Home extends Component{
                 <Row className="show-grid text-center">
                     <Col xs={12} sm={4} className="person-wrapper">
                         <Image src="assets/buyDigital.jpg" circle className="profile-pic"/>
-                        <h3>Los mejores precios</h3>
+                        <h3>HOLA SHARON MARIA</h3>
                         <p>That's a croocked tree.</p>
                     </Col>
                     <Col xs={12} sm={4} className="person-wrapper">
