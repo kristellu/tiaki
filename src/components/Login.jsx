@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {  Button, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Login.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default class Login extends Component {
   constructor(props) {
@@ -51,8 +53,9 @@ export default class Login extends Component {
               type="password"
               
             />
-            <div className="forgot">
-                <a href="reset.html">Forgot password?</a>
+           <div className="form-group text-center">
+              <input type="checkbox" tabIndex={3} className name="remember" id="remember" />
+              <label htmlFor="remember"> Remember Me</label>
             </div>
           </FormGroup>
          
@@ -64,6 +67,12 @@ export default class Login extends Component {
           >
             Login
           </Button>
+          <div className="text-center">
+              <a href="#" tabIndex={1} className="forgot-password">Forgot Password?</a>
+          </div>
+          <div className="text-center">
+              <a href="/signup" tabIndex={2} className="register">Register</a>
+          </div>
         </form>
       </div>
      

@@ -9,6 +9,11 @@
   }
 }
 
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
 
 
 .back { text-align: left; margin-top:10px;}
