@@ -1,11 +1,13 @@
 @media all and (min-width: 480px) {
   .Login {
     padding: 60px 0;
+    text-align: center;
   }
 
   .Login form {
     margin: 0 auto;
     max-width: 320px;
+   text-align: center;
   }
 }
 
@@ -15,6 +17,3 @@
 	color: #666;
 }
 
-
-.back { text-align: left; margin-top:10px;}
-.back a {color: #444444; font-size: 13px;text-decoration: none;}

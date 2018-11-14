@@ -64,8 +64,9 @@ export default class Login extends Component {
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
-          >
+          ><a href="#ADMIN">
             Login
+            </a>
           </Button>
           <div className="text-center">
               <a href="#" tabIndex={1} className="forgot-password">Forgot Password?</a>

@@ -1,11 +1,12 @@
 .header-image {
-  width: 60%;
+  width: 100%;
   margin-top: -2em;
   margin-bottom: 2em;
+  padding: 30px;
 }
 
 .about-profile-pic {
-  width: 60%; 
+  width: 20%; 
   float: left;
   margin: 0 1em 1em 0;
 }
