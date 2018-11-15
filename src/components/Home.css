@@ -21,7 +21,8 @@
 }
 
 .profile-pic {
-  width: 80%;
+  width: 100%;
+
 }
 
 .btn-primary {
@@ -29,11 +30,22 @@
   border: none;
   border-radius: 0;
   background-color: #6F00E8;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 h3{
   margin-bottom: 1em;
 }
+.center {
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  height: 100px;
+  width: 200px;
+  }
 
 .footer
 {
@@ -44,6 +56,7 @@ h3{
 
 a{
   color: #6F00E8;
+  
 }
 
 

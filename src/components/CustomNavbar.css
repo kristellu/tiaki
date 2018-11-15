@@ -1,5 +1,5 @@
 nav.navbar, .navbar-default{
-    background-color: #6F00E8 !important; 
+    background-color: white !important; 
 }
 
 .navbar-default{
@@ -7,21 +7,30 @@ nav.navbar, .navbar-default{
     border: none;
     border-radius: 0;
 }
-
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
 .navbar-default .navbar-nav > li > a{
-    color: white;
+    color: #6F00E8;
 }
 
 .navbar-default .navbar-brand{
-    color: white;
+    color: #6F00E8;
+    text-align: center;
+    flex: center;
 }
 
 .navbar-default .navbar-toogle {
-    border-color: white;
+    border-color: #6F00E8;
 }
 
 .navbar-default .navbar-toogle .icon-bar{
-    background-color: white;
+    background-color: #6F00E8;
 }
 
 .navbar-default .navbar-toogle:focus, .navbar-default .navbar-toogle{
@@ -29,11 +38,11 @@ nav.navbar, .navbar-default{
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: white;
+  color: #6F00E8;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: white;
+  color: #6F00E8;
   background-color: transparent;
 }

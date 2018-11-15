@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import About from './components/About';
-//import News from './components/News';
+import News from './components/News';
 import Navbar from './components/CustomNavbar';
 import Login from './components/Login';
 import Markets from './components/Markets';
@@ -30,7 +30,7 @@ class App extends Component {
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          {/*<Route path="/news" component={News}/>*/}
+          <Route path="/news" component={News}/>
           <Route path="/login" component={Login} />
           <Route path="/markets" component={Markets} />
           <Route path="/signup" component={Signup} />
