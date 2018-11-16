@@ -7,11 +7,11 @@ export default class News extends Component{
         <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <h1 className="my-4">Shop Name</h1>
+            <h1 className="my-4">TIAKI OFFERS&nbsp;</h1>
             <div className="list-group">
-              <a href="#" className="list-group-item">Category 1</a>
-              <a href="#" className="list-group-item">Category 2</a>
-              <a href="#" className="list-group-item">Category 3</a>
+              <a href="#" className="list-group-item">Food</a>
+              <a href="#" className="list-group-item">Accesories</a>
+              <a href="#" className="list-group-item">Others</a>
             </div>
             <p>&nbsp;&nbsp;  &nbsp; </p>
             
@@ -110,11 +110,20 @@ export default class News extends Component{
                   </div>
                 </div>
               </div>
+              
             </div>
             {/* /.row */}
           </div>
           {/* /.col-lg-9 */}
         </div>
+        <div className="footer">
+                <div className="small-print">
+                    <div className="container">
+                    <p><a href="#" target="_blank">Kristell Urueta</a> | <a href="#" target="_blank">JuanD Solano</a> | <a href="#" target="_blank">Sharon Figueroa</a>| <a href="#" target="_blank">Cristian Yepes</a></p>
+                    <p>Copyright © 2018 - Allright Reserved</p>
+                    </div>
+                 </div>
+             </div>
         {/* /.row */}
       </div>
     );

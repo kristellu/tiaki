@@ -123,7 +123,7 @@ export default class Home extends Component{
         </Row>
 
         <div className="center">
-          <a href="/signup" class="btn btn-primary" onClick={this.toggleModal}>SIGN UP</a>
+          <a href="/news" class="btn btn-primary" onClick={this.toggleModal}>SIGN UP</a>
 
         </div>
 

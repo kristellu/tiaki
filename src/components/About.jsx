@@ -22,8 +22,7 @@ export default class About extends Component{
                        <h3>Contact info</h3>
                         <p> EMAIL: TIAKI@GMAIL.COM </p>
                         <p> TEL: 3003030</p>
-                       
-               
+
                 </Grid>
                 <pre>  </pre>
                
