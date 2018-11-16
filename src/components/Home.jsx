@@ -3,9 +3,7 @@ import{ Link } from 'react-router-dom';
 import {Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import Modal from 'react-modal';
 import './Home.css';
-import { Card, CardImg, CardText, CardBlock,
-    CardTitle, CardHeader,CardSubtitle, 
-    Container,CardBody } from 'reactstrap';
+import { Card} from 'reactstrap';
 import TodoItems from "./TodoItems";
 
 export default class Home extends Component{

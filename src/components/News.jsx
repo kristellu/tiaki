@@ -1,47 +1,122 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBlock,
-    CardTitle, CardHeader,CardSubtitle, Button,
-    Container,CardBody } from 'reactstrap';
 import './News.css';
-
-import {Jumbotron, Grid, Row, Col, Image} from 'react-bootstrap';
-import Modal from 'react-modal';
-import TodoItems from "./TodoItems";
-import{ Link } from 'react-router-dom';
 
 export default class News extends Component{
     render(){
     return(
-        <div>
-            <div className="product-info">
-                <div className="product-img">
-                     <div className="content-img"><app-img-ssr>
-                        <img src="https://images.rappi.com/products/2090094016-1531262088.png?d=200x200&e=webp" alt="Vino Reserva Sauvignon Alto Los Carneros 1 ml" title="Vino Reserva Sauvignon Alto Los Carneros 1 ml" className=" ng-lazyloaded" /></app-img-ssr>
-                    </div>
-                </div>{/**/}
-                <div className="promo-discount ng-star-inserted">-34%</div>
-                <div className="cont-info-product">{/**/}
-                    <button className="ng-star-inserted"> Agregar <span class="visible-mobile">+</span></button>
-                     <p className="product-saving ng-star-inserted"><span>-34%</span> Ahorra $&nbsp;15.011 </p>
-                     <p className="product-price product-real-price"> $&nbsp;29.139 {/**/}<span className="product-price-before ng-star-inserted"> $&nbsp;44.150 </span></p>
-                    <p className="product-name">Vino Reserva Sauvignon Alto Los Carneros 1 ml</p>
-                    <p className="product-description">Vino Reserva Sauvignon Alto Los Carneros 1 ml PLU: 13...</p>
-                </div>
+        <div className="container">
+        <div className="row">
+          <div className="col-lg-3">
+            <h1 className="my-4">Shop Name</h1>
+            <div className="list-group">
+              <a href="#" className="list-group-item">Category 1</a>
+              <a href="#" className="list-group-item">Category 2</a>
+              <a href="#" className="list-group-item">Category 3</a>
             </div>
-
-            <div className="cont-info-product">{/**/}
-                <p className="product-saving ng-star-inserted"><span>-34%</span> Ahorra $&nbsp;15.011 </p>
-                <p className="product-price product-real-price"> $&nbsp;29.139 {/**/}<span className="product-price-before ng-star-inserted"> $&nbsp;44.150 </span></p>
-                <p className="product-name">Vino Reserva Sauvignon Alto Los Carneros 1 ml</p>
-                <p className="product-description">Vino Reserva Sauvignon Alto Los Carneros 1 ml PLU: 13...</p>
-            </div>
-            <p class="product-saving ng-star-inserted"><span>-34%</span> Ahorra $&nbsp;15.011 </p>
-            <p className="product-price product-real-price"> $&nbsp;29.139 {/**/}<span className="product-price-before ng-star-inserted"> $&nbsp;44.150 </span></p>
-            <p class="product-name">Vino Reserva Sauvignon Alto Los Carneros 1 ml</p>
+            <p>&nbsp;&nbsp;  &nbsp; </p>
             
+ 
+          </div>
+          {/* /.col-lg-3 */}
+          <div className="col-lg-9">
+            <div className="row">
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item One</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item Two</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item Three</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item Four</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item Five</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100">
+                  <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                  <div className="card-body">
+                    <h4 className="card-title">
+                      <a href="#">Item Six</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* /.row */}
+          </div>
+          {/* /.col-lg-9 */}
         </div>
-        
-    )
+        {/* /.row */}
+      </div>
+    );
   }
 }
-

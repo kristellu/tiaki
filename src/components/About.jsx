@@ -19,17 +19,13 @@ export default class About extends Component{
                         <p>Our team of developers is made up of four students from the Universidad del Norte who have the mission of helping you save a few pesos on your purchases.</p>
                      </Row>
 
-                     <Row className="show-grid text-center">
-                         <h3>Contact info</h3>
-                        <p>
-                            EMAIL: TIAKI@GMAIL.COM </p>
-                           <p> TEL: 3003030
-                       </p>
-                       <p> </p>
-                     </Row>
+                       <h3>Contact info</h3>
+                        <p> EMAIL: TIAKI@GMAIL.COM </p>
+                        <p> TEL: 3003030</p>
+                       
+               
                 </Grid>
                 <pre>  </pre>
-                 <Image src="assets/icons/logotiaki.png" className="header-image"/>
                
                 <div className="footer">
                     <div className="small-print">
