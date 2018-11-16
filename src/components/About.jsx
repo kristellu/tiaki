@@ -27,20 +27,18 @@ export default class About extends Component{
                        </p>
                        <p> </p>
                      </Row>
-
-                     <Row className="footer">
-                      <div className="footer">
-                            <div className="small-print">
-                                <div className="container">
-                                <p><a href="#" target="_blank">Kristell Urueta</a> | <a href="#" target="_blank">JuanD Solano</a> | <a href="#" target="_blank">Sharon Figueroa</a>| <a href="#" target="_blank">Cristian Yepes</a></p>
-                                <p>Copyright © 2018 - <a href="https://twitter.com/asyaddien" target="_blank">Universidad del Norte, Colombia</a> - Allright Reserved</p>
-                                </div>
-                            </div>
-                        </div>
-                    </Row>
                 </Grid>
-                
+                <pre>  </pre>
+                 <Image src="assets/icons/logotiaki.png" className="header-image"/>
                
+                <div className="footer">
+                    <div className="small-print">
+                        <div className="container">
+                            <p><a href="#" target="_blank">Kristell Urueta</a> | <a href="#" target="_blank">JuanD Solano</a> | <a href="#" target="_blank">Sharon Figueroa</a>| <a href="#" target="_blank">Cristian Yepes</a></p>
+                            <p>Copyright © 2018 - <a href="https://twitter.com/asyaddien" target="_blank">Universidad del Norte, Colombia</a> - Allright Reserved</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

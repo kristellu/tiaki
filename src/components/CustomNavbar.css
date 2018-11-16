@@ -46,3 +46,17 @@ nav.navbar, .navbar-default{
   color: #6F00E8;
   background-color: transparent;
 }
+
+.header-bar .header-content-center .header-logo-mobile a img {
+    width: 55px;
+}
+
+
+.header-bar .header-content-center .header-logo-mobile a img {
+    font-size: 0;
+    width: 70px;
+}
+
+.visible-mobile {
+    display: block!important;
+}

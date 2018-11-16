@@ -3,6 +3,9 @@ import{ Link } from 'react-router-dom';
 import {Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import Modal from 'react-modal';
 import './Home.css';
+import { Card, CardImg, CardText, CardBlock,
+    CardTitle, CardHeader,CardSubtitle, 
+    Container,CardBody } from 'reactstrap';
 import TodoItems from "./TodoItems";
 
 export default class Home extends Component{
@@ -56,74 +59,74 @@ export default class Home extends Component{
   render(){
     return(
       <div>
-        {/*<div class= "jumbotron">
-          <div class="container">
-            <div classs="row">
-              <div class="col-sm-6 btn-holder"></div>
-              <div class="col-sm-6">
-              <h1><strong>BUY CHEAP IS SIMPLE</strong></h1>
-              <h3>
-                Find your favorite products with the best prices in the market.
-              </h3>
-              <a href="/about" class="btn btn-primary">MORE ABOUT TIAKI</a>
-            </div>
-          </div>
-        </div>
-    </div>*/}
-
       <Grid>     
         <Row className="show-grid text-center">
           <Col xs={12} sm={4} className="person-wrapper">
-            <Image src="assets/list.jpeg" square className="profile-pic"/>
+            <Card onClick={this.toggleModal}>
+            <div className="card-body">
+            <img width="100%" src="assets/checklist.png" alt="Card image cap"></img>
             <section>
-              <h3> <a onClick={this.toggleModal}>Enter your list</a> </h3>
-              <Modal isOpen={this.state.isActive} onRequestClose={this.toggleModal}> 
-                <div>
-                    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
-                    <link rel="stylesheet" href="//netdna.bootstrapcdn.cxom/bootstrap/3.0.3/css/bootstrap.min.css" />
-                    <div className="form-group">
+               <h3> <a onClick={this.toggleModal} className="card-title">Enter your list</a> </h3>
+                <Modal isOpen={this.state.isActive} onRequestClose={this.toggleModal}> 
+                    <div>
+                      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+                      <link rel="stylesheet" href="//netdna.bootstrapcdn.cxom/bootstrap/3.0.3/css/bootstrap.min.css" />
+                      <div className="form-group">
                         <h1>Products <small>List</small></h1>
-                          <div className="todoListMain">
-                            <div className="header">
-                              <form onSubmit={this.addItem}>
-                                <input ref={(a) => this._inputElement = a} placeholder="Enter your list">
-                                </input>
-                                <button type="submit">ADD</button>
-                              </form>
-                            </div>
-                            <TodoItems entries={this.state.items} delete={this.deleteItem}/>
-                            <div>
-                              <p>Escribe el producto que buscas en el cuadro superior y <b>agrégalo a tu lista de compra.</b></p> 
-                            </div>
-                              <a href="#">Vaciar lista</a>
-                              <div class="border-space ng-star-inserted"></div>
-                              <div class="button-side-nav ng-star-inserted">
-                                <div class="separator-line"></div>
-                                <button> <a2 href="/markets">Buscar esta lista de productos</a2></button>
-                              </div>
+                        <div className="todoListMain">
+                          <div className="header">
+                            <form onSubmit={this.addItem}>
+                              <input ref={(a) => this._inputElement = a} placeholder="Enter your list">
+                              </input>
+                              <button type="submit">ADD</button>
+                            </form>
                           </div>
+                          <TodoItems entries={this.state.items} delete={this.deleteItem}/>
+                        <div>
+                       <p>Type the product you are looking for in the box above and <b>add it to your shopping list.</b></p> 
+                      </div>
+                      <a href="#">Empty list</a>
+                      
+                      <div class="border-space ng-star-inserted"></div>
+                        <div class="button-side-nav ng-star-inserted">
+                          <div class="separator-line"></div>
+                            <button><a href="/markets" style={{color: '#FFFFFF'}}>Search this product list</a></button>
+                          </div>
+                        </div>
+                      </div>
+                      
                     </div>
-                </div>
-                
-              </Modal>
+                </Modal>
             </section>
-           <p>Enter the products you are buying in two easy steps.</p> 
+              <p>Enter the products you are buying in two easy steps.</p>
+            </div>
+          </Card>
+        </Col>
+
+          <Col xs={12} sm={4} className="person-wrapper">
+            <Card>
+              <div className="card-body" className="card-side">
+                <img width="100%" src="assets/shopping-cart.png" alt="Card image cap"></img>
+                <h3> <a href="/markets"> Options to buy</a> </h3> 
+                <p className="card-text">A place where you can find the best deals on the market </p>
+              </div>
+            </Card>
           </Col>
 
           <Col xs={12} sm={4} className="person-wrapper">
-              <Image src="assets/carrito.jpeg" square className="profile-pic"/>
-              <h3> <a href="/markets"> Options to buy</a> </h3> 
-              <p>Finding offers has never been easier.</p>
-            </Col>
-            <Col xs={12} sm={4} className="person-wrapper">
-              <Image src="assets/savemoney.png" square className="profile-pic"/>
-              <h3> <a href="/login"> Save money</a> </h3> 
-               <p>See how much you save by shopping with Tiaki.</p>
+            <Card>
+              <div className="card-body">
+                <img width="100%" src="assets/cost.png" alt="Card image cap"></img>
+                <h3> <a href="/login"> Save money</a> </h3> 
+                <p className="card-text">See how much you save by shopping with Tiaki.</p>
+              </div>
+            </Card>
           </Col>
         </Row>
 
         <div className="center">
-           <a href="/signup" class="btn btn-primary">SIGN UP</a>
+          <a href="/signup" class="btn btn-primary" onClick={this.toggleModal}>SIGN UP</a>
+
         </div>
 
         <div className="footer">
