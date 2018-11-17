@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component{
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     {/*<img alt="Logo Tiaki" class="visible-mobile" class="navbar-brand" id="logo-header-mobile" title="Logo Rappi Mustache" src="assets/icons/logotiaki.png"/>*/}
-                
+
                     <a class="navbar-brand" href="/">TIAKI</a>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -20,7 +20,7 @@ export default class CustomNavbar extends Component{
                         <NavItem eventKey={2} componentClass={Link} href="/" to="/">
                         HOME
                         </NavItem>
-                        <NavItem eventKey={3} componentClass={Link} href="/markets" to="/markets">
+                        <NavItem eventKey={3} componentClass={Link} href="/news" to="/news">
                         OFFERS
                         </NavItem>
                     </Nav>
@@ -32,7 +32,7 @@ export default class CustomNavbar extends Component{
                         LOG IN
                         </NavItem>
                     </Nav>
-                </Navbar.Collapse>      
+                </Navbar.Collapse>
             </Navbar>
         )
     }
