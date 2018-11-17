@@ -13,6 +13,7 @@ import Login from './components/Login';
 import Markets from './components/Markets';
 import Signup from "./components/Signup";
 import request from 'superagent';
+import User from "./components/UserPage";
 
 class App extends Component {
 
@@ -34,7 +35,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/markets" component={Markets} />
           <Route path="/signup" component={Signup} />
-
+          <Route path="/user" component={User} />
         </div>
       </Router>
 
