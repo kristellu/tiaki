@@ -88,11 +88,10 @@ export default class Home extends Component{
                       <div class="border-space ng-star-inserted"></div>
                         <div class="button-side-nav ng-star-inserted">
                           <div class="separator-line"></div>
-                            <button><a href="/markets" style={{color: '#FFFFFF'}}>Search this product list</a></button>
+                            <button><a href="/news" style={{color: '#FFFFFF'}}>Search this product list</a></button>
                           </div>
                         </div>
                       </div>
-
                     </div>
                 </Modal>
             </section>
@@ -123,7 +122,7 @@ export default class Home extends Component{
         </Row>
 
         <div className="center">
-          <a href="/signup" class="btn btn-primary" onClick={this.toggleModal}>SIGN UP</a>
+          <a href="/signup" class="btn btn-primary">SIGN UP</a>
 
         </div>
 

@@ -6,7 +6,6 @@ import FormInputs from "../FormInputs/FormInp.jsx";
 import Button from "../CustomButton/CustomButt.jsx";
 //import Dashboard from "../components/Dashboard";
 
-import damirBosnjak from "../assets/img/damir-bosnjak.jpg";
 import mike from "../assets/img/mike.jpg";
 import ayoOgunseinde2 from "../assets/img/faces/ayo-ogunseinde-2.jpg";
 import joeGardner2 from "../assets/img/faces/joe-gardner-2.jpg";
@@ -19,14 +18,11 @@ class User extends React.Component {
         <Row>
           <Col md={4} xs={12}>
             <Card className="card-user">
-              <div className="image">
-                <img src={damirBosnjak} alt="..." />
-              </div>
               <CardBody>
                 <CardAuthor
                   avatar={mike}
                   avatarAlt="..."
-                  title="Chet Faker"
+                  title ="Chet Faker"
                   description="@chetfaker"
                 />
                 <p className="description text-center">
