@@ -4,6 +4,7 @@ import { Card, CardHeader, CardBody, CardTitle, CardFooter, Row, Col } from "rea
 import CardAuthor from "../CardElements/CardAuth.jsx";
 import FormInputs from "../FormInputs/FormInp.jsx";
 import Button from "../CustomButton/CustomButt.jsx";
+import './UserPage.css';
 //import Dashboard from "../components/Dashboard";
 
 import mike from "../assets/img/mike.jpg";
@@ -26,9 +27,7 @@ class User extends React.Component {
                   description="@chetfaker"
                 />
                 <p className="description text-center">
-                  "I like the way you work it{" "}<br/>
-                    No diggity <br/>
-                    I wanna bag it up"
+                   
                 </p>
               </CardBody>
               <CardFooter>

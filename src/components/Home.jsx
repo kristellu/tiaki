@@ -83,7 +83,7 @@ export default class Home extends Component{
                         <div>
                        <p>Type the product you are looking for in the box above and <b>add it to your shopping list.</b></p>
                       </div>
-                      <a href="#">Empty list</a>
+                      <a href="#boorarlist">Empty list</a>
 
                       <div class="border-space ng-star-inserted"></div>
                         <div class="button-side-nav ng-star-inserted">
