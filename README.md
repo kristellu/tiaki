@@ -1,3 +1,6 @@
+Decription Project: E-marketplace for the sale of products by selected warehouse/supermarket chain.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
